@@ -9,22 +9,25 @@
 <body>
     <script>
 
-        var fruta = prompt('Escribe tu fruta preferida');
-        switch(fruta){
-            case 'mango':
-                console.log('el mango es una de las mejores frutas que puedes comer');
-            break;
+        var edad = prompt('Escribe tu edad','En números solamente');
+        var ciudad = prompt('Escriba su ciudad de origen');
 
-            case 'manzana':
-                console.log('la manzana es una de las mejores frutas medicinales');
-            break;
+        edad = parseInt(edad);
 
-            case 'banana':
-                console.log('la banana es una de las mejores fuentes de potasio');
-            break;
-
-            default:
-                console.log('Esto no es una fruta o no se encuentra en la lista')
+        if(edad > 18){
+            console.log('Usted es mayor de edad')
+        }
+        else if (ciudad == 'sevilla'){
+            console.log('Usted es de ' + ciudad)
+        }
+        else if (ciudad == 'barcelona'){
+            console.log('Usted es de ' + ciudad)
+        }
+        else if (ciudad == 'madrid'){
+            console.log('Usted es de ' + ciudad)
+        }
+        else{
+            console.log('Usted es menor de edad')
         }
     </script>
 
